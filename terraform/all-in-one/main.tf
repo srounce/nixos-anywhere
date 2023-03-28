@@ -35,4 +35,5 @@ module "nixos-rebuild" {
   nixos_system = module.system-build.result.out
   target_host = var.target_host
   target_user = var.target_user
+  ssh_private_key = var.ssh_private_key
 }
